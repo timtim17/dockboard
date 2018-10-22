@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="darkBackground">#333</color>
+
+    <array name="rainbowColors">
+        <item>#d50000</item>
+        <item>#fb8c00</item>
+        <item>#ffea00</item>
+        <item>#00c853</item>
+        <item>#2962ff</item>
+        <item>#4a148c</item>
+        <item>#d50000</item>
+    </array>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

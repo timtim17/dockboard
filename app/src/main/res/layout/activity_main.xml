@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBackground"
+    tools:context=".MainActivity"
+    android:keepScreenOn="true"
+    android:id="@+id/fullscreen_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/clock_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/clock_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextClock
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-30dp"
+                android:layout_weight="1"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:contentDescription="@string/time_desc"
+                android:fontFamily="@font/source_sans_pro_black"
+                android:gravity="bottom|center_horizontal"
+                android:maxLines="1"
+                android:text="@string/empty_time"
+                android:textColor="?android:attr/textColorPrimary"
+                android:format12Hour="hh:mm:ss a"
+                android:elevation="2dp"/>
+
+            <TextClock
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_date"
+                android:gravity="center_horizontal"
+                android:text="@string/empty_date"
+                android:textSize="20sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/source_sans_pro_light"
+                android:format12Hour="@string/date_format"
+                android:format24Hour="@string/date_format"
+                android:elevation="2dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0"
+        android:background="?android:attr/listDivider" />
+
+    <FrameLayout
+        android:id="@+id/widget_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="some widget would go here" />
+    </FrameLayout>
+</LinearLayout>
