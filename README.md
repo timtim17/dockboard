@@ -1,4 +1,4 @@
-# Dockboard
+# Dockboard: Dock + Dashboard
 
 A small project to show the time on a "docked" phone, without having a real dock (i.e. Pixel Stand).
 
